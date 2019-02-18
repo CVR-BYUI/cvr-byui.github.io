@@ -10,7 +10,7 @@
         display: block;
       }
       
-      li: first-child {
+      li:first-child {
           display: none;
       }
 
