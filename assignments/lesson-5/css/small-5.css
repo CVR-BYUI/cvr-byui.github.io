@@ -35,6 +35,7 @@ ul {
 	padding: 0;
 	background-color: #4b86b4;
 	display: block;
+	overflow: hidden;
 }
 
 li a {
