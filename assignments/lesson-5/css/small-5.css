@@ -38,6 +38,10 @@ ul {
 	overflow: hidden;
 }
 
+.dropdown {
+	display: none;
+}
+
 li a {
     display: block;
     color: #000;
@@ -53,4 +57,27 @@ li a:hover {
 .active {
 	background-color: #2e4045;
 	color: white;
+}
+
+@media (max-width: 30em) {
+    nav ul li {
+        float: none;
+    }
+    .dropdown {
+        display: block;
+        padding: 15px 0 15px 20px;
+        color:  #000000;
+        text-align: center;
+        
+        
+    }
+    ul li a {
+        padding: 0px 20px 10px 20px;
+    }
+    ul {
+        display: none;
+    }
+    ul li:hover {
+        display: block;
+    }
 }
