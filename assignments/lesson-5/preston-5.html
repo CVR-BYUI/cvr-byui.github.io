@@ -18,52 +18,90 @@
     <body>
 
         <header>
-            <h1 class="heading"><img src="images/weather-icon.jpg" width="75" height="75" alt="sun partially covered by cloud" id="logo">longsleeves</h1>
-            <div id="motto">
-                <h3>current weather info to keep you warm and informed</h3>
-            </div>
+            <h1 id="heading"><img src="images/weather-icon.jpg" width="75" height="75" alt="sun partially covered by cloud" id="logo">longsleeves</h1>
+            <h3 id="motto">current weather info to keep you warm and informed</h3>
         </header>
 
             <nav>
-                <li><a class="dropdown">&#9776; Menu</a>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Preston</a></li>
-                        <li><a href="#">Soda Springs</a></li>
-                        <li><a href="#">Fish Haven</a></li>
-                        <li><a href="#">Storm Center</a></li>
-                        <li><a href="#">Gallery</a></li>
-                    </ul>
-                </li>
+                <ul id="hamburgerAndFries">
+                    <li><a href="#">&equiv; Menu</a></li>
+                </ul>
+                <ul id="mainMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
             </nav>
 
         <main>
-            <h1>Preston</h1>
-            <img src="images/placeholder.png" alt="hero image" width="1200" height="600">
-
+            <h2>Preston Idaho</h2>
+                
             <section>
-                <h3>Weather Summary</h3>
-                <p>Text goes here</p>
+                <div id="weathersummarybox">
+                    <img src="images/placeholder.png" alt="hero image" width="1200" height="600">
+                    <div id="weathersummary">
+                        <h3>Weather Summary</h3>
+                        <p>Currently: Sunny</p>
+                        <p>High: 76 &deg;F</p>
+                        <p>Wind Chill: 78 &deg;F</p>
+                        <p>Humidity: 69%</p>
+                        <p>Wind Speed: 5 mph</p>
+                    </div>
+                </div>
             </section>
 
-            <article>
-                <h2>Article Title</h2>
-                <h4>By Author</h4>
-                <p>Text goes here</p>
-                <img src="images/placeholder.png" alt="article image" width="1000" height="600">
+            <section id="fivedayforecast">
+                <h3>5 Day Forecast</h3>
+                <table id="forecasttable">
+                    <thead>
+                        <tr>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="images/sun.png" alt="sun icon" class="forecasticon"><br>89&deg;F</td>
+                            <td><img src="images/sun.png" alt="sun icon" class="forecasticon"><br>87&deg;F</td>
+                            <td><img src="images/sun.png" alt="sun icon" class="forecasticon"><br>78&deg;F</td>
+                            <td><img src="images/sun.png" alt="sun icon" class="forecasticon"><br>75&deg;F</td>
+                            <td><img src="images/sun.png" alt="sun icon" class="forecasticon"><br>72&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article id="article">
+                <h3>Founders Day Fresco</h3>
+                <h4>by Janica Juarez</h4>
+                <p>
+                    <img src="images/placeholder.png" alt="article image" width="1000" height="600">
+                    I was recently reflecting upon the founders day event held at Foundation Park each year. I have been taking the festival for granted and have not been properly engaging in perhaps the most popular community event of the year. In response, I contacted Ms. Sharon via email and expressed my desire to serve on the event committee. Well, you guessed it, the phone rings almost immediately and she promptly asks me to be the even committee chair. Literally, good grief! My appreciation for the years of deidcated, generous service of volunteers and sponsors has escalated beyond what I thought I could feel for such a thing and ... <a href="#">continue to full article</a>
+                </p>                
             </article>
 
-            <section>
-                <h3>Contact Information</h3>
+            <section id="contactinfo">
                 <img src="images/placeholder.png" alt="map" width="1000" height="400">
+                <div id="contact">
+                    <h4>longsleeves</h4>
+                    <p>30 N 1st E</p>
+                    <p>Preston, ID 83263</p>
+                    <br>
+                    <p>999.999.9999</p>
+                    <p>longsleeves@longsleeves.com</p>
+                </div>               
             </section>
 
         </main>
 
         <footer>
-
             <p>&copy; 2019  |  longsleeves  |  Provo, UT</p>
-
         </footer>
 
     </body>

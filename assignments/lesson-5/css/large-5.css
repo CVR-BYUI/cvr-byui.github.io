@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
 
     ul {
         font-family: 'Raleway', sans-serif;
@@ -8,10 +8,6 @@
         overflow: hidden;
         background-color: #4b86b4;
         display: block;
-      }
-      
-      li:first-child {
-          display: none;
       }
 
       li {
@@ -30,4 +26,12 @@
         background-color: #2e4045;
         color: white;
       } 
+
+      #mainMenu {
+        display: block;
+      }
+
+      #hamburgerAndFries {
+        display: none;
+      }
     }
