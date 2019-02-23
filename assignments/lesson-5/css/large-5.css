@@ -25,7 +25,12 @@
       li a:hover {
         background-color: #2e4045;
         color: white;
-      } 
+      }
+
+      .active {
+        background-color: #2e4045;
+        color: white;
+      }
 
       #mainMenu {
         display: block;
