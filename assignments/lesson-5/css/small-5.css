@@ -66,6 +66,11 @@ li a:hover {
 	color: white;
 }
 
+#weatherSummaryBox {
+	margin: 10px auto;
+	position: relative;
+}
+
 #heroImage {
 	width: 100%;
 }
@@ -81,4 +86,6 @@ li a:hover {
 	#menuButton {
 		display: block;
 	}
+
+	
 }
