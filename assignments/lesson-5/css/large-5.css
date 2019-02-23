@@ -3,35 +3,16 @@
 @media only screen and (min-width: 800px) {
 
     ul {
-        font-family: 'Raleway', sans-serif;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
         overflow: hidden;
-        background-color: #4b86b4;
         display: inline-block;
     }
 
-    /* li {
+    li {
       float: left;
-    } */
+    } 
     
     li a {
-      /* display: block; */
-      color: #000;
       text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    li a:hover {
-      background-color: #2e4045;
-      color: white;
-    }
-
-    #active {
-      background-color: #2e4045;
-      color: white;
     }
 
     #mainMenu {
