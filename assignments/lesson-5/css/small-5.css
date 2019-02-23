@@ -1,3 +1,10 @@
+/* General settings for all sizes */
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+}
+
 header {
 	margin: auto;
     padding: 10px;
@@ -26,6 +33,13 @@ h1 {
 	margin: 0;
 	color: #0892d0;
 }
+
+h2 {
+	text-align: center;
+	color: #2e4045;
+}
+
+/* Small screen size */
 
 @media only screen and (max-width: 800px) {
 
