@@ -3,16 +3,15 @@
 @media only screen and (min-width: 800px) {
 
     ul {
-        overflow: hidden;
-        display: inline-block;
+      overflow: hidden;
     }
 
     li {
-      float: left;
+      display: inline;
     } 
     
     li a {
-      text-align: center;
+      display: inline-block;
     }
 
     #mainMenu {
