@@ -27,7 +27,7 @@
         color: white;
       }
 
-      .active {
+      #active {
         background-color: #2e4045;
         color: white;
       }
@@ -36,7 +36,7 @@
         display: block;
       }
 
-      #hamburgerAndFries {
+      #menuButton {
         display: none;
       }
     }
