@@ -21,4 +21,8 @@
     #menuButton {
       display: none;
     }
+
+    #articleImageSmall {
+      display: none;
+    }
   }

@@ -34,6 +34,10 @@ h1 {
 	color: #0892d0;
 }
 
+main {
+	padding: 20px;
+}
+
 h2 {
 	text-align: center;
 	color: #2e4045;
@@ -72,7 +76,75 @@ li a:hover {
 }
 
 #heroImage {
+	display: block;
 	width: 100%;
+	margin: auto;
+}
+
+#weatherSummary {
+    position: absolute;
+    top: 10px;
+    margin: 30px;
+    background-color: #A5CBF4;
+    padding: 15px;
+	text-align: left;
+	opacity: 0.8;
+}
+
+#article {
+	background-color: #4b86b4;
+	margin-top: 30px;
+	padding: 30px;
+}
+  
+article h3 {
+	
+	padding-top: 10px;
+	padding-left: 20px;
+}
+  
+article h4 {
+	padding-left: 20px;
+	font-style: italic;
+}
+
+#articleImageSmall {
+	display: block;
+	width: 100%;
+	margin: auto; 
+}
+
+article p {
+	padding-left: 20px;
+}
+
+#contactInfo {
+	background-color: #2e4045;
+	color: #83adb5;
+	margin-top: 30px;
+	padding: 30px;
+	text-align: center;
+}
+
+#contact h4 {
+	font-size: 150%;
+	margin: 0;
+}
+
+#map {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding-top: 20px;
+}
+
+footer {
+	background-color: #4b86b4;
+	padding: 1px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	color: white;
 }
 
 /* Small screen size */
@@ -87,5 +159,12 @@ li a:hover {
 		display: block;
 	}
 
-	
+	#fiveDayForecast {
+		display: none;
+	  }
+
+	#articleImageLarge {
+		display: none;
+	}
+
 }
