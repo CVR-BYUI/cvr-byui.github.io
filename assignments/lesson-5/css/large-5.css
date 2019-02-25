@@ -31,7 +31,12 @@
       display: none;
     }
 
-    #articleImageSmall {
-      display: none;
+    #article {
+      overflow: auto;
+    }
+
+    #articleImage {
+      float: right;
+      width: 50%;
     }
   }
