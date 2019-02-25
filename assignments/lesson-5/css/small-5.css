@@ -99,6 +99,34 @@ li a:hover {
 	padding-bottom: 5px;
 }
 
+#fiveDayForecast h3 {
+	font-size: 30px;
+	text-align: center;
+}
+
+#forecastTable {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	margin: auto;
+}
+
+#forecastTable td {
+	padding: 25px;
+	border: 1px solid black;
+}
+
+#forecastTable th {
+	padding: 15px;
+	background-color: #A5CBF4;
+	border: 1px solid black;;
+}
+
+.forecastIcon {
+	height: 60px;
+	padding-bottom: 10px;
+}
+
 #article {
 	background-color: #4b86b4;
 	margin-top: 30px;
