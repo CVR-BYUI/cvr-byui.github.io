@@ -160,9 +160,8 @@ article p {
 #contactInfo {
 	background-color: #2e4045;
 	color: #83adb5;
-	margin-top: 30px;
+	margin: 20px 50px 0px 50px;
 	padding: 30px;
-	text-align: center;
 }
 
 #contact h4 {
@@ -170,7 +169,7 @@ article p {
 	margin: 0;
 }
 
-#map {
+#mapSmall {
 	display: block;
 	width: 100%;
 	margin: auto;
@@ -188,7 +187,7 @@ footer {
 
 /* Small screen size */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
 	#mainMenu {
 		display: none;
@@ -202,8 +201,12 @@ footer {
 		display: none;
 	  }
 
-	#articleImageLarge {
+	#mapLarge {
 		display: none;
+	}
+
+	#contactInfo {
+		text-align: center;
 	}
 
 }
