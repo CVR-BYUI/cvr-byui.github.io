@@ -56,7 +56,6 @@ h2 {
 	display: block;
 }
 
-<<<<<<< HEAD
 li:first-child {
     display: block;
     text-align: center;
@@ -70,20 +69,6 @@ li {
 }
 
 li a {
-=======
-#mainMenu li:first-child {
-	display: block;
-}
-
-#mainMenu li {
-	display: none;
-	width: 100%;
-	height: 50%;
-	margin: auto;
-}
-
-#mainMenu li a {
->>>>>>> 89d2e5aa3616015ef8903063363262ad4129ce2b
 	display: block;
 	color: #000;
 	padding: 14px 16px;
@@ -96,12 +81,8 @@ li a {
 }
 
 #responsive li {
-<<<<<<< HEAD
     display: block;
     text-align: center;
-=======
-	display: block;
->>>>>>> 89d2e5aa3616015ef8903063363262ad4129ce2b
 }
 
 #active {
