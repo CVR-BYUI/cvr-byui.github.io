@@ -56,6 +56,18 @@ ul {
 	display: block;
 }
 
+li:first-child {
+    display: block;
+    text-align: center;
+}
+
+li {
+    display: none;    
+    width: 100%;
+    height: 50px;
+    margin: auto;
+}
+
 li a {
 	display: block;
 	color: #000;
@@ -66,6 +78,11 @@ li a {
 li a:hover {
 	background-color: #2e4045;
 	color: white;
+}
+
+#responsive li {
+    display: block;
+    text-align: center;
 }
 
 #active {
@@ -95,11 +112,11 @@ li a:hover {
 }
 
 #weatherSummary {
-  position: absolute;
-  top: 10px;
-  margin: 30px;
-  background-color: #A5CBF4;
-  padding: 15px;
+	position: absolute;
+	top: 10px;
+	margin: 30px;
+	background-color: #A5CBF4;
+	padding: 15px;
 	text-align: left;
 	opacity: 0.9;
 }
@@ -146,9 +163,9 @@ li a:hover {
 article h3 {
 	
 	padding-top: 35px;
-  padding-left: 20px;
-  padding-bottom: 5px;
-  margin: 0;
+  	padding-left: 20px;
+  	padding-bottom: 5px;
+  	margin: 0;
 }
   
 article h4 {
