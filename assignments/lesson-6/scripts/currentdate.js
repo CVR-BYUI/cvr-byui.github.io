@@ -1,14 +1,14 @@
 let currentDate = new Date();
 
 // Array for days of the week
-var weekday = newArray(7);
-day[0] = "Sunday";
-day[1] = "Monday";
-day[2] = "Tuesday";
-day[3] = "Wednesday";
-day[4] = "Thursday";
-day[5] = "Friday";
-day[6] = "Saturday";
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
 // Variables for current day of the week
 let currentDay = currentDate.getDay();
@@ -18,7 +18,7 @@ let displayDay = weekday[currentDay];
 let displayDate = currentDate.getDate();
 
 // Array for months of the year
-let month = newArray(12);
+let month = new Array(12);
 month[0] = "January";
 month[1] = "February";
 month[2] = "March";
