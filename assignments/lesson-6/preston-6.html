@@ -41,7 +41,11 @@
                 
             <section>
                 <div id="weatherSummaryBox">
-                    <img src="images/cit230_image_franklin_optimized.jpeg" alt="sun and clouds over a grassy field" id="heroImage">
+                    <picture id="heroImage">
+                        <source srcset="images/cit230_image_franklin_optimized1000.jpeg" media="(min-width: 500px) and (max-width: 799px)">
+                            <source srcset="images/cit230_image_franklin_optimized2000.jpeg" media="(min-width: 800px)">
+                        <img src="images/cit230_image_franklin_optimized600.jpeg" alt="sun and clouds over a grassy field">
+                    </picture>
                     <div id="weatherSummary">
                         <h3><u>Weather Summary</u></h3>
                         <p>Currently: Sunny<br>
