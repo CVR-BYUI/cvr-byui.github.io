@@ -1,4 +1,4 @@
-var currentDate = new Date();
+let currentDate = new Date();
 
 // Array for days of the week
 var weekday = newArray(7);
@@ -11,14 +11,14 @@ day[5] = "Friday";
 day[6] = "Saturday";
 
 // Variables for current day of the week
-currentDay = currentDate.getDay();
-displayDay = weekday[currentDay];
+let currentDay = currentDate.getDay();
+let displayDay = weekday[currentDay];
 
 // Variable for current date (number)
-displayDate = currentDate.getDate();
+let displayDate = currentDate.getDate();
 
 // Array for months of the year
-var month = newArray(12);
+let month = newArray(12);
 month[0] = "January";
 month[1] = "February";
 month[2] = "March";
@@ -33,14 +33,14 @@ month[10] = "November";
 month[11] = "December";
 
 // Variables for current month
-currentMonth = currentDate.getMonth();
-displayMonth = month[currentMonth];
+let currentMonth = currentDate.getMonth();
+let displayMonth = month[currentMonth];
 
 // Variable for current year
-displayYear = currentDate.getFullYear();
+let displayYear = currentDate.getFullYear();
 
 // Variable for formatted date
-todayDate = displayDay + ", " + displayDate + " " + displayMonth + " " + displayYear;
+let todayDate = displayDay + ", " + displayDate + " " + displayMonth + " " + displayYear;
 
 // Display on screen
 document.getElementById("currentDate").innerHTML = todayDate;
