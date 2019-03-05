@@ -11,24 +11,12 @@
       font-size: 40px;
     }
   
-    ul {
-      overflow: hidden;
-    }
-
-    li {
-      display: inline;
-    } 
-    
-    li a {
-      display: inline-block;
-    }
-
-    #mainMenu {
-      display: block;
-    }
-
-    #mainMenu li:first-child {
+    .mainMenu li:first-child {
       display: none;
+    }
+  
+    .mainMenu li {
+      display: inline-block;
     }
 
     #heroImageLargeText {
