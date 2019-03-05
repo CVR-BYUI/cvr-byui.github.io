@@ -27,7 +27,7 @@
       display: block;
     }
 
-    #menuButton {
+    #mainMenu li:first-child {
       display: none;
     }
 
