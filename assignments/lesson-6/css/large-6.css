@@ -41,6 +41,10 @@
       color: white;
     }
 
+    #heroImageSmall {
+      display: none;
+    }
+
     #article {
       overflow: auto;
     }
