@@ -93,7 +93,7 @@ nav {
 	position: relative;
 }
 
-#heroImage {
+.heroImage {
 	display: block;
 	width: 100%;
 	margin: auto;
