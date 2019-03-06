@@ -99,10 +99,6 @@ nav {
 	margin: auto;
 }
 
-#heroImageLargeText {
-	display: none;
-}
-
 #heroImageSmallText {
 	position: absolute;
 	top: 50%;
@@ -218,6 +214,10 @@ footer {
 
 @media only screen and (max-width: 899px) {
 
+	#heroImageLargeText {
+		display: none;
+	}
+	
 	#fiveDayForecast {
 		display: none;
 	}
