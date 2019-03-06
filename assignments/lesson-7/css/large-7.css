@@ -1,0 +1,66 @@
+/* Large screen size */
+
+@media only screen and (min-width: 900px) {
+
+    main {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+  
+    h2 {
+      font-size: 40px;
+    }
+  
+    .mainMenu li:first-child {
+      display: none;
+    }
+  
+    .mainMenu li {
+      display: inline-block;
+    }
+
+    #heroImageLargeText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 30px;
+      color: white;
+    }
+
+    #heroImageSmallText {
+      display: none;
+    }
+
+    #article {
+      overflow: auto;
+    }
+
+    #articleImage {
+      float: right;
+      width: 50%;
+      padding: 30px;
+    }
+
+    #contactInfo {
+      overflow: auto;
+      text-align: left;
+      margin: 15px 100px 0px 100px;
+    }
+    
+    #mapLarge {
+      float: right;
+      width: 50%;
+      padding-right: 150px;
+    }
+
+    #mapSmall {
+      display: none;
+    }
+
+    footer {
+      margin: 0px 100px 50px 100px;
+    }
+
+  }
