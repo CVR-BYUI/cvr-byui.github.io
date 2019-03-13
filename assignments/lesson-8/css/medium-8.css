@@ -1,0 +1,10 @@
+/* Medium screen size */
+
+/* Gallery images */
+
+@media only screen and (min-width: 800px) {
+    
+    .imageContainer { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
