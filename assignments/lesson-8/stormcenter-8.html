@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="This the town page for Preston on longlseeves.com">
+        <meta name="author" content="Chris Van Ry">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-8.css">
+        <link rel="stylesheet" href="css/medium-8.css">
+        <link rel="stylesheet" href="css/large-8.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <title>longsleeves | Preston | Current Weather Conditions and Forecast</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div><h1 id="heading"><img src="images/weather_icon.jpg" width="75" height="75" alt="sun partially covered by cloud" id="logo">longsleeves</h1></div>
+            <div><h3 id="motto">current weather info to keep you warm and informed</h3></div>
+        </header>
+
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#" id="active">Storm Center</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+        <main>    
+
+            <form action="thanks.html" method="get" id="stormcenter">
+
+                <div class="formcontainer">
+                            
+                    <h2>Storm Center</h2>
+                    <p>Report a storm or unusual weather event in your travel area.</p>
+                            
+                    <hr>
+            
+                        <label><b>Full Name</b></label>
+                        <input type="text" placeholder="Enter your full name" pattern="[A-Za-z ]{4,}" name="name" required>
+        
+                        <label><b>Email</b></label>
+                        <input type="email" placeholder="weather@email.com" name="email">
+        
+                        <label><b>Phone Number</b></label>
+                        <input type="tel" placeholder="123 456 789" name="telephone" required>
+        
+                        <label><b>Zip Code</b></label>
+                        <input type="number" placeholder="Enter Zip Code" name="zip" required>
+        
+                        <label><b>Storm Date</b></label>
+                        <input type="date" name="stormdate">
+        
+                        <label><b>Storm type</b></label>
+                        <input list="storms" name="stormtype">
+        
+                        <datalist id="storms">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+        
+                        <label><b>Storm severity</b></label>
+                        <input type="range" name="severity" id="range_severity" value="5" min="1" max="10" oninput="range_severity_disp.value = range_severity.value">
+                        <output id="range_severity_disp"></output>
+                        <br>
+
+                        <b>Storm region</b>
+                        <select name="regions" form="stormcenter">
+                            <option value="" disabled selected>Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda">Soda Springs</option>
+                            <option value="Fish">Fish Haven</option>
+                        </select>
+        
+                        <div id="safety">
+                            <b>User in-danger level </b>
+                            <br>
+                            <input type="radio" name="dangerlevel" value="Yes"> Yes<br>
+                            <input type="radio" name="dangerlevel" value="Maybe"> Maybe<br>
+                            <input type="radio" name="dangerlevel" value="No"> No <br>
+                        </div>
+            
+                            <b>Additional information or comments</b>
+                            <textarea id="comments" rows="4" cols="50" name="comment" form="stormcenter"></textarea>
+            
+                            <p>By submitting a report, you agree to our <a href="#">Terms & Conditions</a>.</p>
+            
+                            <button type="submit" class="submitbtn">Submit</button>
+            
+                    </form>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2019 longsleeves  |  Chris Van Ry  |  Provo, UT</p>
+            <p id="currentDate"></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+
+</html>
