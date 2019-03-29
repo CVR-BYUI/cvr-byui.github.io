@@ -46,6 +46,10 @@
     padding-right: 150px;
   }
 
+  #mapLarge {
+    display: unset;
+  }
+
   #mapSmall {
     display: none;
   }
@@ -67,4 +71,16 @@
   .imageBox:hover {
     box-shadow: 0 0 50px #333;
   }
+
+  /* Index page town data */
+
+  .townData {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .townData div {
+    width: 100%;
+    height: 600px;
+  }
+
 }

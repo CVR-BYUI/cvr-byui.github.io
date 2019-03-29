@@ -1,10 +1,14 @@
 /* Medium screen size */
 
-/* Gallery images */
-
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     
-    .imageContainer { 
-        grid-template-columns: repeat(2, 1fr);
+    #mapLarge {
+  display: none;
     }
+
+    /* Gallery images */
+
+  .imageContainer { 
+      grid-template-columns: repeat(2, 1fr);
+  }
 }

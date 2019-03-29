@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/medium-9.css">
         <link rel="stylesheet" href="css/large-9.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <title>longsleeves | Gallery</title>
+        <title>longsleeves | Preston | Current Weather Conditions and Forecast</title>
 
     </head>
 
@@ -26,33 +26,43 @@
             <nav>
                 <ul class="mainMenu">
                     <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
-                    <li><a href="index-9.html">Home</a></li>
+                    <li><a href="#" id="active">Home</a></li>
                     <li><a href="preston-9.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="stormcenter-9.html">Storm Center</a></li>
-                    <li><a href="#" id="active">Gallery</a></li>
+                    <li><a href="gallery-9.html">Gallery</a></li>
                 </ul>
             </nav>
 
         <main>
+
+            <picture>
+                <img class="heroImage" src="images/idaho_400.jpg" alt="mountain sun" sizes="100vw" srcset="images/idaho_400.jpg 200w, images/idaho_800.jpg 400w, images/idaho_1200.jpg 800w">
+            </picture>
+
+            <h2 class="indexHeader">Our Towns</h2>
                 
-            <section class="gallery">
+            <section class="townData">
 
-            <h2>Weather Gallery</h2>
-            
-                <div class="imageContainer">
-                    <div class="imageBox"><img src="images/sun_600.jpg" alt="Sun">Horses find relief in the shade of a tree on a sunny day.</div>
-                    <div class="imageBox"><img src="images/rain_600.jpg" alt="Rain">A woman keeps dry from the rain with the help of an umbrella.</div>
-                    <div class="imageBox"><img src="images/wind_600.jpg" alt="Wind">These wind turbines in California take advantage of the power of nature.</div>
-                    <div class="imageBox"><img src="images/lightning_600.jpg" alt="Lightning">Electrifying lightning strikes are the result of positive and negative charges in the clouds.</div>
-                    <div class="imageBox"><img src="images/snow_600.jpg" alt="Snow">This past winter, Buffalo, NY experienced record snowfall.</div>
-                    <div class="imageBox"><img src="images/tornado_600.jpg" alt="Tornado">Tornados can cause massive destruction and devastation and are still not fully understood by scientists.</div>
-                </div>
-
-            </section>
+            </section>       
 
         </main>
+
+            <section id="contactInfo">
+                <div id="contact">
+                    <img src="images/preston_map.jpg" alt="google map of preston idaho" id="mapLarge">
+                    <h4>longsleeves</h4>
+                    <p>
+                        30 N 1st E<br>
+                        Preston, ID 83263<br>
+                        <br>
+                        999.999.9999<br>
+                        contact@longsleeves.com<br>
+                    </p>
+                    <img src="images/preston_map.jpg" alt="google map of preston idaho" id="mapSmall">
+                </div>             
+            </section>
 
         <footer>
             <p>&copy; 2019 longsleeves  |  Chris Van Ry  |  Provo, UT</p>
@@ -61,6 +71,7 @@
 
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
+        <script src="scripts/jsonTownData.js"></script>
 
     </body>
 

@@ -47,7 +47,7 @@ main {
 h2 {
 	text-align: center;
  	margin: 0;
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 	color: #2e4045;
 }
 
@@ -61,7 +61,6 @@ nav {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-
 	display: flex;
 	flex-direction: column;
 }
@@ -408,6 +407,57 @@ input[type="range"] {
          -o-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+/* Index page json town data */
+
+.indexHeader {
+	padding-top: 20px;
+}
+
+.townData {
+  display: grid;
+  grid-template-rows: 600px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center;
+  grid-gap: 75px;
+}
+
+.townData div {
+  font-size: 20px;
+  text-align: center;
+  width: 75%;
+  height: 650px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+.townData div:nth-child(1){
+  background-image: url(https://cvr-byui.github.io/assignments/lesson-9/images/fish_haven_400.jpg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: 50% 93%;
+}
+
+.townData div:nth-child(2){
+  background-image: url(https://cvr-byui.github.io/assignments/lesson-9/images/preston_town_400.jpg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: 50% 93%;
+}
+
+.townData div:nth-child(3){
+  background-image: url(https://cvr-byui.github.io/assignments/lesson-9/images/soda_springs_400.jpg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: 50% 93%;
+}
+
+.townData h2{
+  background-color: #4b86b4;
+  color: white;
+  padding-top: 15px;
 }
 
 /* Small screen size */
