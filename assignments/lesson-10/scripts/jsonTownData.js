@@ -27,11 +27,24 @@ function showTownData(jsonObj) {
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
    
-            myH2.textContent = town[i].name;
-            myPara1.textContent = 'Motto: ' + town[i].motto;
-            myPara2.textContent = 'Year Founded: ' + town[i].yearFounded;
-            myPara3.textContent = 'Current Population:' + town[i].currentPopulation;
-            myPara4.textContent = 'Average Rainfall:' + town[i].averageRainfall;
+        myH2.textContent = town[i].name;
+        myPara1.textContent = 'Motto: ' + town[i].motto;
+        myPara2.textContent = 'Year Founded: ' + town[i].yearFounded;
+        myPara3.textContent = 'Current Population:' + town[i].currentPopulation;
+        myPara4.textContent = 'Average Rainfall:' + town[i].averageRainfall;
+
+        // Display in proper order
+        if (name.includes("Preston")) {
+            myDiv.style.order = "1";
+        }
+
+        if (name.includes("Soda Springs")) {
+            myDiv.style.order = "2";
+        }
+
+        if (name.includes("Fish Haven")) {
+            myDiv.style.order = "3";
+        }
         
         myDiv.appendChild(myH2);
         myDiv.appendChild(myPara1);
