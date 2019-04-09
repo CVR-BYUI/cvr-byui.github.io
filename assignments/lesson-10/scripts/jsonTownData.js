@@ -18,6 +18,8 @@ function showTownData(jsonObj) {
     
     for (let i = 0; i < town.length; i++) {
         
+        var name = town[i].name;
+
         if (town[i].name == "Preston" || town[i].name == "Soda Springs" || town[i].name == "Fish Haven" ) {
 
         var myDiv = document.createElement('div');
@@ -34,15 +36,15 @@ function showTownData(jsonObj) {
         myPara4.textContent = 'Average Rainfall:' + town[i].averageRainfall;
 
         // Display in proper order
-        if (town.includes("Fish Haven")) {
+        if (name.includes("Fish Haven")) {
             myDiv.style.order = "3";
         }
 
-        if (town.includes("Preston")) {
+        if (name.includes("Preston")) {
             myDiv.style.order = "1";
         }
 
-        if (town.includes("Soda Springs")) {
+        if (name.includes("Soda Springs")) {
             myDiv.style.order = "2";
         }
         
