@@ -7,10 +7,10 @@ weatherRequest.onload = function () {
     console.log(weatherData);
 
     // description, temp, humidity, windspeed
-    document.getElementById('weatherDesc').innerHTML = weatherData.weather[0].description;
-    document.getElementById('highTemp').innerHTML = weatherData.main.temp_max;
-    document.getElementById('humidity').innerHTML = weatherData.main.humidity;
-    document.getElementById('windSpeed').innerHTML = weatherData.wind.speed;
+    document.getElementById('weatherDesc').innerHTML = weatherData.list[0].weather[0].description;
+    document.getElementById('highTemp').innerHTML = weatherData.list[0].main.temp_max;
+    document.getElementById('humidity').innerHTML = weatherData.list[0].main.humidity;
+    document.getElementById('windSpeed').innerHTML = weatherData.list[0].wind.speed;
 
     // wind chill
     let windChill = 35.74 + 0.6215 * weatherData.main.temp - 35.75 * Math.pow(weatherData.wind.speed, 0.16) + 0.4275 * weatherData.main.temp * Math.pow(weatherData.wind.speed, 0.16);
