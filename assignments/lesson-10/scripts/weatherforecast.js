@@ -58,8 +58,7 @@ weatherForecast.onload = function () {
                 section.appendChild(divSection);
                 
             }
-
-        
+     
     }
 
 }
