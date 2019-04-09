@@ -34,15 +34,15 @@ function showTownData(jsonObj) {
         myPara4.textContent = 'Average Rainfall:' + town[i].averageRainfall;
 
         // Display in proper order
-        if (name.includes("Fish Haven")) {
+        if (town.includes("Fish Haven")) {
             myDiv.style.order = "3";
         }
 
-        if (name.includes("Preston")) {
+        if (town.includes("Preston")) {
             myDiv.style.order = "1";
         }
 
-        if (name.includes("Soda Springs")) {
+        if (town.includes("Soda Springs")) {
             myDiv.style.order = "2";
         }
         
