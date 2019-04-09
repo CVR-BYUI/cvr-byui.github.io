@@ -13,7 +13,11 @@ weatherRequest.onload = function () {
     document.getElementById('windSpeed').innerHTML = weatherData.list[0].wind.speed;
 
     // wind chill
-    let windChill = 35.74 + 0.6215 * weatherData.main.temp - 35.75 * Math.pow(weatherData.wind.speed, 0.16) + 0.4275 * weatherData.main.temp * Math.pow(weatherData.wind.speed, 0.16);
+    let t = document.getElementById('highTemp').innerHTML = weatherData.list[0].main.temp_max;
+    let x = document.getElementById('windSpeed').innerHTML = weatherData.list[0].wind.speed;
+    let s = Math.pow(x, 0.16);
+
+    let windChill = 35.74 + (0.6215 * t) - (35.75 * s) + (0.4275 * t * s);
     windChill = Math.round(windChill);
     document.getElementById('windChill').innerHTML = windChill;
 }
