@@ -364,10 +364,10 @@ input[type="range"] {
 }
 
 .animate-first {
-  -webkit-animation-delay: 0;
-     -moz-animation-delay: 0;
-       -o-animation-delay: 0;
-          animation-delay: 0;
+  -webkit-animation-delay: 0s;
+     -moz-animation-delay: 0s;
+       -o-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .animate-second {
