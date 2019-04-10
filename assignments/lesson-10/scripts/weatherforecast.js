@@ -1,3 +1,4 @@
+let section = document.querySelector('section');
 let weatherForecast = new XMLHttpRequest
 weatherForecast.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=472837bd2aa3046b5d16b832ef0dd806&units=imperial', true);
 weatherForecast.send();
