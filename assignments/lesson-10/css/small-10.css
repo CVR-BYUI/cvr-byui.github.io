@@ -149,6 +149,35 @@ nav {
 	padding-bottom: 10px;
 }
 
+#article {
+	background-color: #4b86b4;
+	margin-top: 30px;
+	padding: 30px;
+}
+  
+#article h3 {
+	padding-top: 35px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+  
+#article h4 {
+	padding-left: 20px;
+	font-style: italic;
+	margin: 0;
+}
+
+#articleImage {
+	display: block;
+	width: 100%;
+	margin: auto; 
+}
+
+#article p {
+	padding-left: 20px;
+}
+
 /* Event Calendar */
 
 #events h3 {
@@ -193,36 +222,6 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 150%;
-}
-
-#article {
-	background-color: #4b86b4;
-	margin-top: 30px;
-	padding: 30px;
-}
-  
-article h3 {
-	
-	padding-top: 35px;
-  	padding-left: 20px;
-  	padding-bottom: 5px;
-  	margin: 0;
-}
-  
-article h4 {
-	padding-left: 20px;
-	font-style: italic;
-	margin: 0;
-}
-
-#articleImage {
-	display: block;
-	width: 100%;
-	margin: auto; 
-}
-
-article p {
-	padding-left: 20px;
 }
 
 #contactInfo {
