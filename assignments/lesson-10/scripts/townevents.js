@@ -13,16 +13,17 @@ request.onload = function () {
 function showTownEvent(jsonObj) {
 
     let towns = jsonObj['towns'];
-    let events = jsonObj['events'];
     let listEvent = [];
 
     for (let i = 0; i < towns.length; i++) {
         let name = towns[i].name;
-        if (name.includes("Preston")) {
 
-            for (let p = 0; p < events.length; p++) {
-            let townEvent = data[p].events;
-            listEvent.push(townEvent);
+        if (name.includes("Preston")) {
+            let events = towns[i].events;
+
+            for (let p = 0; p < events.length; p++) {          
+                let townEvent = towns[i].events[p];
+                listEvent.push(townEvent);
             }
         }
     }
