@@ -15,11 +15,11 @@ function showTownEvent(jsonObj) {
     let data = jsonObj['towns'];
     let listEvent = [];
 
-    for (var i = 0; i < data.length; i++) {
-        var name = data[i].name;
+    for (let i = 0; i < data.length; i++) {
+        let name = data[i].name;
         if (name.includes("Preston")) {
 
-            for (p = 0; p < data.events.length; p++) {
+            for (let p = 0; p < data.events.length; p++) {
             let event = data[p].events;
             listEvent.push(event);
             }
