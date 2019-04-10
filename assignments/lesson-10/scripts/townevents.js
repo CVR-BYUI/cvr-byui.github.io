@@ -19,7 +19,7 @@ function showTownEvent(jsonObj) {
         let name = data[i].name;
         if (name.includes("Preston")) {
 
-            for (let p = 0; p < data.events.length; p++) {
+            for (let p = 0; p < events.length; p++) {
             let event = data[p].events;
             listEvent.push(event);
             }
