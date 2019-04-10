@@ -3,14 +3,14 @@ weatherForecast.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id
 weatherForecast.send();
 weatherForecast.onload = function () {
 
-    var weatherInfo = JSON.parse(weatherForecast.responseText);
+    let weatherInfo = JSON.parse(weatherForecast.responseText);
     console.log(weatherInfo);
 
-    var listWeekday = [];
-    var listTemp = [];
-    var listIconCode = [];
+    let listWeekday = [];
+    let listTemp = [];
+    let listIconCode = [];
 
-    var weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     
     
     for (i = 0; i < weatherInfo.list.length; ++i) {
@@ -18,17 +18,18 @@ weatherForecast.onload = function () {
         if (time.includes("18:00:00")) {
 
             // Weekday
-            var findDate = weekday[date.getDay()];
+            let date = new Date(weatherInfo.list[i].dt * 1000);
+            let findDate = weekday[date.getDay()];
             listWeekday.push(findDate);
 
             // Current Temp
-            var temp = weatherInfo.list[i].main.temp;
-            var temp = Math.round(temp);
+            let temp = weatherInfo.list[i].main.temp;
+            let temp = Math.round(temp);
             listTemp.push(temp);
 
             // Weather icon
-            var iconcode = weatherInfo.list[i].weather["0"].icon;
-            var icon_path = "https://openweathermap.org/img/w/" + iconcode + ".png";
+            let iconcode = weatherInfo.list[i].weather["0"].icon;
+            let icon_path = "https://openweathermap.org/img/w/" + iconcode + ".png";
             listIconCode.push(icon_path);
         }
     }
