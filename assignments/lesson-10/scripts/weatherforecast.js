@@ -24,7 +24,7 @@ weatherForecast.onload = function () {
 
             // Current Temp
             let temp = weatherInfo.list[i].main.temp;
-            let temp = Math.round(temp);
+            temp = Math.round(temp);
             listTemp.push(temp);
 
             // Weather icon
