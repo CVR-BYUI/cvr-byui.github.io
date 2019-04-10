@@ -24,6 +24,10 @@
     flex: 1 1 auto;
   }
 
+  #fiveDayForecast {
+    display: unset;
+  }
+
   #article {
     overflow: auto;
   }
@@ -41,13 +45,10 @@
   }
   
   #mapLarge {
+    display: unset;
     float: right;
     width: 50%;
     padding-right: 150px;
-  }
-
-  #mapLarge {
-    display: unset;
   }
 
   #mapSmall {
