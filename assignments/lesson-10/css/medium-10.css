@@ -5,6 +5,22 @@
   #fiveDayForecast {
     display: none;
   }
+
+  #eventCalendar {
+		display: none;
+	}
+	
+	#eventImage { 
+		display: none;
+	}
+
+	#eventGrid {
+		width: 90%;
+		grid-template-areas:
+			'event1 event1 event1 event1'
+			'event2 event2 event2 event2'
+			'event3 event3 event3 event3';
+	}
     
   #mapLarge {
     display: none;

@@ -38,6 +38,22 @@
     padding: 30px;
   }
 
+  #eventCalendar {
+		display: unset;
+	}
+	
+	#eventImage { 
+		display: unset;
+	}
+
+	#eventGrid {
+		width: 70%;
+		grid-template-areas:
+      'image image event1 event1 event1 event1'
+      'image image event2 event2 event2 event2'
+      'image image event3 event3 event3 event3';
+	}
+
   #contactInfo {
     overflow: auto;
     text-align: left;
