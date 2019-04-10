@@ -149,6 +149,52 @@ nav {
 	padding-bottom: 10px;
 }
 
+/* Event Calendar */
+
+#events h3 {
+  padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#eventCalendar {
+  width: 200px;
+}
+
+#eventImage { 
+  grid-area: image;
+  margin: auto;
+}
+
+#gridEvent1 { 
+  grid-area: event1;
+  margin: auto;
+}
+
+#gridEvent2 { 
+  grid-area: event2;
+  margin: auto;
+}
+
+#gridEvent3 { 
+  grid-area: event3;
+  margin: auto;
+}
+
+#eventGrid {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    'image image event1 event1 event1 event1'
+    'image image event2 event2 event2 event2'
+    'image image event3 event3 event3 event3';
+  grid-gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 150%;
+}
+
 #article {
 	background-color: #4b86b4;
 	margin-top: 30px;
@@ -466,6 +512,22 @@ input[type="range"] {
 	
 	#fiveDayForecast {
 		display: none;
+	}
+
+	#eventCalendar {
+		display: none;
+	}
+	
+	#eventImage { 
+		display: none;
+	}
+
+	#eventGrid {
+		width: 100%;
+		grid-template-areas:
+			'event1 event1 event1 event1'
+			'event2 event2 event2 event2'
+			'event3 event3 event3 event3';
 	}
 
 	#mapLarge {
