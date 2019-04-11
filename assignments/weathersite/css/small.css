@@ -477,21 +477,21 @@ input[type="range"] {
 }
 
 .townData div:nth-child(1){
-  background-image: url(https://cvr-byui.github.io/assignments/lesson-9/images/fish_haven_400.jpg);
+  background-image: url(https://cvr-byui.github.io/assignments/weathersite/images/index_fish_haven_400.jpg);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: 50% 93%;
 }
 
 .townData div:nth-child(2){
-  background-image: url(https://cvr-byui.github.io/assignments/lesson-9/images/preston_town_400.jpg);
+  background-image: url(https://cvr-byui.github.io/assignments/weathersite/images/index_preston_400.jpg);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: 50% 93%;
 }
 
 .townData div:nth-child(3){
-  background-image: url(https://cvr-byui.github.io/assignments/lesson-9/images/soda_springs_400.jpg);
+  background-image: url(https://cvr-byui.github.io/assignments/weathersite/images/index_soda_springs_400.jpg);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: 50% 93%;
