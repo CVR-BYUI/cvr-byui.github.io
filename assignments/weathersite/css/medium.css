@@ -19,7 +19,8 @@
 		grid-template-areas:
 			'event1 event1 event1 event1'
 			'event2 event2 event2 event2'
-			'event3 event3 event3 event3';
+			'event3 event3 event3 event3'
+			'event4 event4 event4 event4';
 	}
     
   #mapLarge {
