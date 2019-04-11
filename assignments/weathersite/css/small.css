@@ -208,6 +208,11 @@ nav {
   margin: auto;
 }
 
+#gridEvent4 { 
+  grid-area: event4;
+  margin: auto;
+}
+
 #eventGrid {
   width: 70%;
   margin: auto;
@@ -215,7 +220,8 @@ nav {
   grid-template-areas:
     'image image event1 event1 event1 event1'
     'image image event2 event2 event2 event2'
-    'image image event3 event3 event3 event3';
+		'image image event3 event3 event3 event3'
+		'image image event4 event4 event4 event4';
   grid-gap: 10px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
