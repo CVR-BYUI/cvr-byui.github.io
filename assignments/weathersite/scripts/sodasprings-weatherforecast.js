@@ -22,8 +22,8 @@ weatherForecast.onload = function () {
             let findDate = weekday[date.getDay()];
             listWeekday.push(findDate);
 
-            // Current Temp
-            let temp = weatherInfo.list[i].main.temp;
+            // High Temp
+            let temp = weatherInfo.list[i].main.temp_max;
             temp = Math.round(temp);
             listTemp.push(temp);
 
@@ -48,7 +48,7 @@ weatherForecast.onload = function () {
     document.getElementById('weather_icon4').src = listIconCode[3];
     document.getElementById('weather_icon5').src = listIconCode[4];
 
-    //Display forecasted temperature
+    //Display forecasted high temperature
     document.getElementById("temp1").innerHTML = listTemp[0];
     document.getElementById("temp2").innerHTML = listTemp[1];
     document.getElementById("temp3").innerHTML = listTemp[2];
