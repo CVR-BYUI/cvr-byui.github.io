@@ -113,13 +113,15 @@ nav {
 	background-color: #A5CBF4;
 	padding: 15px;
 	text-align: left;
-	line-height: 175%;
 	opacity: 0.9;
 }
 
 #weatherSummary h3 {
 	margin: 0;
 	padding-bottom: 5px;
+}
+#weatherSummary p {
+	line-height: 175%;
 }
 
 #fiveDayForecast h3 {
