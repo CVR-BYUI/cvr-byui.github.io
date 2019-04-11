@@ -20,4 +20,11 @@ weatherRequest.onload = function () {
     let windChill = 35.74 + (0.6215 * t) - (35.75 * s) + (0.4275 * t * s);
     windChill = Math.round(windChill);
     document.getElementById('windChill').innerHTML = windChill;
+
+    // wind direction
+    let degree = weatherData.list[0].wind.deg;
+    let compass = Math.round((degree - 11.25) / 22.5);
+    let windNames = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+    let direction = windNames[compass];
+    document.getElementById('windDirection').innerHTML = direction;
 }
