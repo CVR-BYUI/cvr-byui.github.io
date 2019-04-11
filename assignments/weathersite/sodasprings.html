@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="This is the town page for Soda Springs on longsleeves.com">
+        <meta name="author" content="Chris Van Ry">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <title>longsleeves | Soda Springs | Current Weather Conditions and Forecast</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div><h1 id="heading"><img src="images/weather_icon.jpg" width="75" height="75" alt="sun partially covered by cloud" id="logo">longsleeves</h1></div>
+            <div><h3 id="motto">current weather info to keep you warm and informed</h3></div>
+        </header>
+
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="#" id="active">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+        <main>
+
+            <h2>Soda Springs Idaho</h2>
+                
+                <div id="weatherSummaryBox">
+                    <picture>
+                        <img class="heroImage" src="images/soda_springs_400.jpg" alt="geyser" sizes="100vw" srcset="images/soda_springs_400.jpg 200w, images/soda_springs_800.jpg 400w, images/soda_springs_1200.jpg 800w">
+                    </picture>
+                    <div id="weatherSummary">
+                        <h3><u>Weather Summary</u></h3>
+                        <p>Currently: <span id="weatherDesc"></span><br>
+                        High: <span id="highTemp"></span>&deg; F<br>
+                        Wind Chill: <span id="windChill"></span>&deg; F<br>
+                        Humidity: <span id="humidity"></span> %<br>
+                        Wind Speed: <span id="windSpeed"></span> mph</p>
+                    </div>
+                </div>
+
+                <section id="fiveDayForecast">
+                        <h3>5 Day Forecast</h3>
+                        <table id="forecastTable">
+                            <thead>
+                                <tr>
+                                    <th><span id="day1"></span></th>
+                                    <th><span id="day2"></span></th>
+                                    <th><span id="day3"></span></th>
+                                    <th><span id="day4"></span></th>
+                                    <th><span id="day5"></span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="images/sun.png" id="weather_icon1" alt="sun icon" class="forecastIcon"><br><strong><span id="temp1"></span>&deg; F</strong></td>
+                                    <td><img src="images/sun.png" id="weather_icon2" alt="sun icon" class="forecastIcon"><br><strong><span id="temp2"></span>&deg; F</strong></td>
+                                    <td><img src="images/sun.png" id="weather_icon3" alt="sun icon" class="forecastIcon"><br><strong><span id="temp3"></span>&deg; F</strong></td>
+                                    <td><img src="images/sun.png" id="weather_icon4" alt="sun icon" class="forecastIcon"><br><strong><span id="temp4"></span>&deg; F</strong></td>
+                                    <td><img src="images/sun.png" id="weather_icon5" alt="sun icon" class="forecastIcon"><br><strong><span id="temp5"></span>&deg; F</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+
+            <article id="article">
+                <img src="images/nock_the_rock_800.jpg" alt="boulder with etched logo and caption" id="articleImage">
+                <h3>"Nock the Rock" Annual Half Marathon</h3>
+                <h4>From <a href="nocktherock.weebly.com/about-race.html">Nock the Rock</a></h4>
+                <p>
+                    This half marathon was founded by Wade Clark in 2011. Wade began running to help cope with the tragic loss of his brother and friends in an avalanche. He was the only survivor. The inscription on "the rock" is Gaelic and it means "stone of help." It is where Wade started and ended each run during his time of healing. 
+                    <br>
+                    Wade had to hustle to be the first one across the line on that first year even though he was the only one running the race. He picked up some goats along the course and they nearly beat him to the finish (check out our 2011 photo gallery to see the goats!). The goat has become the mascot for our race. 
+                    <br>
+                    This course will test your stamina with a variety of terrain. It starts out with pavement, changes to gravel, then a trail through a field, next more gravel road, and finishes up the last couple miles on pavement. Each road has gentle hills, though about half of the course is flat, with the second half being the "flattest."
+                    <br> 
+                    This is an incredibly scenic, 13.2 half marathon run in the beautiful Rocky Mountains surrounding Soda Springs, Idaho. Next race will be held [June 22nd, 2019] at 8:00 AM for the half-marathon. The kids 1 mile race it will start at 7:30 AM. The starting line is at 311 W 4th S. If you aren't ready to run a half-marathon by yourself just yet, grab a friend and do our two-person relay--each leg is a little over 6.5 miles.
+                </p>                
+            </article>
+
+            <section id="events">
+
+                <h3>Upcoming Events</h3>
+                
+                <div id="eventGrid">
+                    <div id="eventImage"><img src="images/calendar.png" alt="calendar icon" id="eventCalendar"></div>
+                    <div id="gridEvent1"><span id="event1"></span></div>
+                    <div id="gridEvent2"><span id="event2"></span></div>  
+                    <div id="gridEvent3"><span id="event3"></span></div>
+                </div>
+
+            </section>
+
+        </main>
+
+            <section id="contactInfo">
+                <div id="contact">
+                    <img src="images/preston_map.jpg" alt="google map of preston idaho" id="mapLarge">
+                    <h4>longsleeves</h4>
+                    <p>
+                        30 N 1st E<br>
+                        Preston, ID 83263<br>
+                        <br>
+                        999.999.9999<br>
+                        contact@longsleeves.com<br>
+                    </p>
+                    <img src="images/preston_map.jpg" alt="google map of preston idaho" id="mapSmall">
+                </div>             
+            </section>
+
+        <footer>
+            <p>&copy; 2019 longsleeves  |  Chris Van Ry  |  Provo, UT</p>
+            <p>Weather information provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+            <p id="currentDate"></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/sodasprings-weathersummary.js"></script>
+        <script src="scripts/sodasprings-weatherforecast.js"></script>
+        <script src="scripts/sodasprings-townevents.js"></script>
+
+    </body>
+
+</html>
