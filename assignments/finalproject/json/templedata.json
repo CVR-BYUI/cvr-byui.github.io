@@ -109,16 +109,16 @@
         "city" : "Portland",
         "telephone" : "(1) 503-639-7066",
         "email" : "portlandtemple@myldsmail.net",
-        "Announced" : "7 April 1984",
-        "Groundbreaking" : "20 September 1986",
-        "Dedicated" : "19 August 1989",	
-        "Services" : [
+        "announced" : "7 April 1984",
+        "groundbreaking" : "20 September 1986",
+        "dedicated" : "19 August 1989",	
+        "services" : [
           "Clothing rental available",
           "Cafeteria available",
           "No patron housing available",
           "Distribution center nearby"
         ],
-        "Schedule" : [
+        "schedule" : [
           "Every hour starting at 6:00 AM",
           "All sessions Walk-ins Only",
           "Last session is at 6:00 PM"
