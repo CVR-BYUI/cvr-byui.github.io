@@ -1,0 +1,137 @@
+{
+    "templeData" : [
+      {
+        "templeName" : "Palmyra New York Temple",
+        "address1" : "2720 Temple Rd",
+        "address2" : "Palmyra NY 14522",
+        "address3" : "United States",
+        "city" : "Palmyra",
+        "telephone" : "(1) 315-597-6001",
+        "email" : "palmyratemple@myldsmail.net",
+        "announced" : "21 February 1999",
+        "groundbreaking" : "25 May 1999",
+        "dedicated" : "6 April 2000",	
+        "services" : [
+          "No clothing rental available",
+          "No cafeteria available",
+          "No patron housing available",
+          "No distribution center nearby"
+        ],
+        "schedule" : [
+          "9:30 AM Walk-ins and Appointments",
+          "11:00 AM Walk-ins and Appointments",
+          "1:30 PM Walk-ins and Appointments",
+          "3:00 PM Walk-ins and Appointments"
+        ],
+        "closures" : [
+          "Thursday, 4 July 2019",
+          "Monday, 9 September 2019 - Saturday, 21 September 2019",
+          "Saturday, 5 October 2019",
+          "Thursday, 28 November 2019",
+          "Tuesday, 24 December 2019",
+          "Wednesday, 25 December 2019",
+          "Tuesday, 31 December 2019"
+        ]
+      },
+      {
+        "templeName" : "Provo City Center Temple",
+        "address1" : "50 South University Ave",
+        "address2" : "Provo UT 84601",
+        "address3" : "United States",
+         "city" : "Provo",
+        "telephone" : "(1) 801-343-2700",
+        "email" : "provocitycentertemple@myldsmail.net",
+        "announced" : "1 October 2011",
+        "groundbreaking" : "12 May 2012",
+        "dedicated" : "20 March 2016",	
+        "services" : [
+          "Clothing rental available",
+          "No cafeteria available",
+          "No patron housing available",
+          "Distribution center nearby"
+        ],
+        "schedule" : [
+          "Every hour starting at 6:00 AM",
+          "All sessions Walk-ins Only",
+          "6:00 PM Spanish Available",
+          "Last session is at 8:00 PM"
+        ],
+        "closures" : [
+          "Sunday, 23 June 2019 - Saturday, 6 July 2019",
+          "Wednesday, 24 July 2019",
+          "Saturday, 5 October 2019",
+          "Wednesday, 27 November 2019 (Limited Hours)",
+          "Thursday, 28 November 2019",
+          "Sunday, 1 December 2019 - Saturday, 14 December 2019",
+          "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+          "Tuesday, 31 December 2019"
+        ]
+      },
+      {
+        "templeName" : "Atlanta Georgia Temple",
+        "address1" : "6450 Barfield Rd NE",
+        "address2" : "Sandy Springs GA 30328",
+        "address3" : "United States",
+        "city" : "Atlanta",
+        "telephone" : "(1) 770-393-3698",
+        "email" : "atlantatemple@myldsmail.net",
+        "announced" : "2 April 1980",
+        "groundbreaking" : "7 March 1981",
+        "dedicated" : "1 June 1983",	
+        "services" : [
+          "No clothing rental available",
+          "No cafeteria available",
+          "No patron housing available",
+          "Distribution center nearby"
+        ],
+        "schedule" : [
+          "Every hour starting at 8:00 AM",
+          "All sessions Walk-ins and Appointments",
+          "2:00 PM ASL Available",
+          "Last session is at 3:00 PM"
+        ],
+        "closures" : [
+          "Thursday, 4 July 2019",
+          "Monday, 23 September 2019 - Monday, 7 October 2019",
+          "Saturday, 9 November 2019 (Limited Hours)",
+          "Wednesday, 27 November 2019 (Limited Hours)",
+          "Thursday, 28 November 2019",
+          "Tuesday, 24 December 2019 (Limited Hours)",
+          "Wednesday, 25 December 2019",
+          "Tuesday, 31 December 2019 (Limited Hours)"
+        ]
+      },
+      {
+        "templeName" : "Portland Oregon Temple",
+        "address1" : "13600 Kruse Oaks Blvd",
+        "address2" : "Lake Oswego OR 97035-8602",
+        "address3" : "United States",
+        "city" : "Portland",
+        "telephone" : "(1) 503-639-7066",
+        "email" : "portlandtemple@myldsmail.net",
+        "Announced" : "7 April 1984",
+        "Groundbreaking" : "20 September 1986",
+        "Dedicated" : "19 August 1989",	
+        "Services" : [
+          "Clothing rental available",
+          "Cafeteria available",
+          "No patron housing available",
+          "Distribution center nearby"
+        ],
+        "Schedule" : [
+          "Every hour starting at 6:00 AM",
+          "All sessions Walk-ins Only",
+          "Last session is at 6:00 PM"
+        ],
+        "closures" : [
+          "Thursday, 4 July 2019",
+          "Monday, 29 July 2019 - Monday, 12 August 2019",
+          "Saturday, 5 October 2019",
+          "Wednesday, 27 November 2019 (Limited Hours)",
+          "Thursday, 28 November 2019",
+          "Tuesday, 24 December 2019",
+          "Wednesday, 25 December 2019"
+        ]
+      }
+    ]
+  }
