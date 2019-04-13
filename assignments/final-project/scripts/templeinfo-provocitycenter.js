@@ -1,5 +1,5 @@
 let request = new XMLHttpRequest();
-request.open('GET', 'https://raw.githubusercontent.com/CVR-BYUI/cvr-byui.github.io/master/assignments/finalproject/json/templedata.json');
+request.open('GET', 'https://raw.githubusercontent.com/CVR-BYUI/cvr-byui.github.io/master/assignments/final-project/json/templedata.json');
 request.responseType = 'json';
 request.send();
 
