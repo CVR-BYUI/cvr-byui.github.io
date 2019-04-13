@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="This is the Missionaries page for The Temple Inn & Suites">
+        <meta name="author" content="Chris Van Ry">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+
+        <title>The Temple Inn & Suites | Services | Missionaries </title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/logo.jpg" alt="the temple inn and suites logo" id="logo">
+        </header>
+
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="temple.html">Temple</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html" id="active">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-image-missionary">
+                <div class="hero-text">
+                    <h1>Full-time Temple Missionaries</h1>
+                </div>                
+            </div>
+
+            <main>
+
+                <div class="missionary-button">
+
+                    <a href="services.html" class="button">Back to Services Page</a>
+
+                </div>
+
+                <h1 class="missionary-header">We provide comfort and convenience while you serve</h1>
+
+                <div class="missionary-services-container-1">
+
+                    <div class="missionary-box-1">Full-time Temple Missionaries receive a 20% discount when reserving a Suite. We want to provide some of the comforts of home while you're away. Suites offer a kitchenette or full kitchen, living areas to visit or just relax, and a multi-jet jacuzzi.</div>
+                    <div class="missionary-box-2"><img src="images/suite_kitchen_800.jpg" alt="full kitchen in suite" class="missionary-services-image"></div>
+
+                </div>
+
+                <div class="missionary-services-container-2">
+
+                    <div class="missionary-box-2"><img src="images/hotel_shuttle_800.jpg" alt="tables and chairs set up in the missionary hall" class="missionary-services-image"></div>
+                    <div class="missionary-box-1">When you're busy, sometimes not having to drive can be a relief. Your stay includes free shuttle service to the Temple, running on the hour. There are shuttles that also visit local Church Historical sites, such as Temple Square or the Joseph Smith Farm, depending on which of our locations you stay.</div>
+
+                </div>
+
+                <section class="contact-header">
+                    <h1>For more information</h1>
+                    <h3>Please complete the following form and we will contact you within 48 hours.</h3>
+                </section>
+
+                <form method="get" action="success.html" id="missionary-form">
+
+                    <div class="form-container">
+            
+                        <label>Full Name</label>
+                        <input type="text" name="fullname" form="missionary-form" placeholder="First and Last Name" pattern="[A-Za-z\s]{5,}" required>
+        
+                        <label>Email</label>
+                        <input type="email" name="email" form="missionary-form" placeholder="email@templeinnsuites.com" required>
+            
+                        <label>Questions / Special Accommodation Inquiry</label>
+                        <textarea name="comment" rows="5" cols="50" form="missionary-form" required></textarea>
+        
+                        <button type="submit" class="button">Submit</button>
+
+                    </div>
+            
+                </form>
+
+            </main>
+
+        <footer>
+
+            <section class="footer-info">
+
+                <p class="business-name">The Temple Inn & Suites</p>
+                <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+                <p>&copy; 2019 The Temple Inn & Suites  |  Chris Van Ry  |  Provo, UT</p>
+                <p><span id="currentDate"></span> | <a href="resources.html">Resources</a> |<a href="http://byui.edu">BYU Idaho</a></p>
+
+            </section>
+
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+
+</html>

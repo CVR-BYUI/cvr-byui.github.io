@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="This is the Palmyra New York Temple page for The Temple Inn & Suites">
+        <meta name="author" content="Chris Van Ry">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+
+        <title>The Temple Inn & Suites | Temple | Palmyra New York </title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/logo.jpg" alt="the temple inn and suites logo" id="logo">
+        </header>
+
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="temple.html" id="active">Temple</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-image-palmyra">
+                <div class="hero-text">
+                    <h1><span id="templeName"></span></h1>
+                </div>                
+            </div>
+
+            <main>
+
+                <div class="back-button">
+
+                    <a href="temple.html" class="button">Back to Temple Page</a>
+
+                </div>
+
+                <h3>Current Weather Conditions</h3>
+
+                    <div class="temple-info">
+
+                        <p>
+                            Currently: <span id="weatherDesc"></span><br>
+                            Temperature: <span id="currentTemp"></span>&deg; F<br>
+                            Wind Chill: <span id="windChill"></span>&deg; F<br>
+                            <hr class="column-break">
+                            Humidity: <span id="humidity"></span> %<br>
+                            Wind Speed: <span id="windSpeed"></span> mph<br>
+                            Wind Direction: <span id="windDirection"></span>
+                        </p>
+
+                    </div>
+
+                <h3>Temple Information</h3>
+
+                    <div class="temple-info">
+
+                        <p>
+                            <h4>Address</h4>
+                            <br>
+                            <span id="address1"></span><br>
+                            <span id="address2"></span><br>
+                            <span id="address3"></span><br>
+                            <br>
+                            <h4>Telephone</h4>
+                            <br>
+                            <span id="telephone"></span><br>
+                            <br>
+                            <h4>Email</h4>
+                            <br>
+                            <span id="email"></span><br>
+                            <br>
+                            <h4>Milestones</h4>
+                            <br>
+                            Announced: <span id="announced"></span><br>
+                            Groundbreaking: <span id="groundbreaking"></span><br>
+                            Dedicated: <span id="dedicated"></span><br>
+                            <hr class="column-break">
+                            <h4>Services</h4>
+                            <br>
+                            <span id="services"></span>
+                            <br>
+                            <h4>Endowment Session Schedule (Saturday)</h4>
+                            <br>
+                            <span id="schedule"></span>
+                            <br>
+                            <h4>Closures</h4>
+                            <br>
+                            <span id="closures"></span>
+                        </p>
+
+                    </div>
+
+                    <div class="more-info-button">
+
+                        <a href="https://www.lds.org/temples/details/palmyra-new-york-temple?lang=eng" class="button">More Information</a>
+
+                    </div>
+
+            </main>
+
+        <footer>
+
+            <section class="footer-info">
+
+                <p class="business-name">The Temple Inn & Suites</p>
+                <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+                <p>&copy; 2019 The Temple Inn & Suites  |  Chris Van Ry  |  Provo, UT</p>
+                <p><span id="currentDate"></span> | <a href="resources.html">Resources</a> |<a href="http://byui.edu">BYU Idaho</a></p>
+
+            </section>
+
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/templeinfo-palmyra.js"></script>
+        <script src="scripts/templeweather-palmyra.js"></script>
+
+    </body>
+
+</html>

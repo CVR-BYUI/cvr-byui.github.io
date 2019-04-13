@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="This is the Contact page for The Temple Inn & Suites">
+        <meta name="author" content="Chris Van Ry">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+
+        <title>The Temple Inn & Suites | Contact | Submit Inquiry</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/logo.jpg" alt="the temple inn and suites logo" id="logo">
+        </header>
+
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" id="active">Contact</a></li>
+                    <li><a href="temple.html">Temple</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                
+                <section class="contact-header">
+                    <h1>Contact Us</h1>
+                    <h3>Please complete the following form and we will contact you within 48 hours.</h3>
+                </section>
+
+                <form method="get" action="success.html" id="contact-form">
+
+                    <div class="form-container">
+                
+                        <label>Full Name</label>
+                        <input type="text" name="fullname" form="contact-form" placeholder="First and Last Name" pattern="[A-Za-z\s]{5,}" required>
+        
+                        <label>Email</label>
+                        <input type="email" name="email" form="contact-form" placeholder="email@templeinnsuites.com">
+        
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" form="contact-form" placeholder="800.555.1234" required>
+
+                        <label>Preferred Time to be Contacted</label>
+                            <select name="time-preference" form="contact-form">
+                                <option value="" disabled selected>Select Time of Day</option>
+                                <option value="Morning">Morning</option>
+                                <option value="Afternoon">Afternoon</option>
+                                <option value="Evening">Evening</option>
+                            </select>
+            
+                        <label>Your reason for contacting us:</label>
+                        <textarea name="comment" rows="5" cols="50" form="contact-form"></textarea>
+        
+                        <button type="submit" class="button">Submit</button>
+
+                    </div>
+                
+                </form>
+
+                <div class="map-container">
+
+                    <div class="google-map">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013257!2d-77.09772048421436!3d38.98325177955748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814%2C+USA!5e0!3m2!1sen!2sgt!4v1554585493393!5m2!1sen!2sgt"width="600" height="450" style="border:0" allowfullscreen></iframe>
+                        <h4>The Temple Inn & Suites</h4>
+                        <p>4800 Montgomery Ln #300<br>
+                        Bethesda, MD 20814<br>
+                        <br>
+                        240.555.1234</p>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        <footer>
+
+            <section class="footer-info">
+
+                <p class="business-name">The Temple Inn & Suites</p>
+                <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+                <p>&copy; 2019 The Temple Inn & Suites  |  Chris Van Ry  |  Provo, UT</p>
+                <p><span id="currentDate"></span> | <a href="resources.html">Resources</a> |<a href="http://byui.edu">BYU Idaho</a></p>
+
+            </section>
+            
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+
+</html>

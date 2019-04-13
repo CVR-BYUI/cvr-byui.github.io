@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="This is the Reservation page for The Temple Inn & Suites">
+        <meta name="author" content="Chris Van Ry">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+
+        <title>The Temple Inn & Suites | Reservation | Submit Reservation</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/logo.jpg" alt="the temple inn and suites logo" id="logo">
+        </header>
+
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="temple.html">Temple</a></li>
+                    <li><a href="#" id="active">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                
+                <section class="contact-header">
+                    <h1>Book Your Room</h1>
+                    <h3>Please complete the following form to reserve your room.</h3>
+                </section>
+
+                <form method="get" action="reservationsuccess.html" id="reservation-form">
+
+                    <div class="form-container">
+                
+                        <label>Full Name</label>
+                        <input type="text" name="fullname" form="reservation-form" placeholder="First and Last Name" pattern="[A-Za-z\s]{5,}" required>
+        
+                        <label>Email</label>
+                        <input type="email" name="email" form="reservation-form" placeholder="email@templeinnsuites.com" required>
+        
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" form="reservation-form" placeholder="800.555.1234" required>
+
+                        <label>Home State (USA) or Home Country</label>
+                        <input type="text" name="homeland" form="reservation-form" placeholder="Home State or Country" pattern="[A-Za-z\s]{5,}" required>
+
+                        <label>Hotel Location</label>
+                            <select name="hotel-location" form="reservation-form" required>
+                                <option value="" disabled selected>Select Hotel</option>
+                                <option value="Palmyra New York">Palmyra New York</option>
+                                <option value="Provo City Center Utah">Provo City Center Utah</option>
+                                <option value="Atlanta Georgia">Atlanta Georgia</option>
+                                <option value="Portland Oregon">Portland Oregon</option>
+                            </select>
+
+                        <label>Check-In Date</label>
+                        <input type="date" name="checkindate" form="reservation-form" required>
+
+                        <label>Check-Out Date</label>
+                        <input type="date" name="checkoutdate" form="reservation-form" required>
+
+                        <label>Room Type</label>
+                            <select name="roomtype" form="reservation-form">
+                                <option value="" disabled selected>Select Room Type</option>
+                                <option value="Single - 1 Twin Bed">Single - 1 Twin Bed</option>
+                                <option value="Double - 1 Double Bed or 2 Twin Beds">Double - 1 Double Bed or 2 Twin Beds</option>
+                                <option value="Triple - 1 Double Bed and 1 Twin Bed">Triple - 1 Double Bed and 1 Twin Bed</option>
+                                <option value="Queen - 1 Queen Bed">Queen - 1 Queen Bed</option>
+                                <option value="Queen Double - 2 Queen Beds">Queen Double - 2 Queen Beds</option>
+                                <option value="King - 1 King Bed">King - 1 King Bed</option>
+                                <option value="King Double - 2 King Beds">King Double - 2 King Beds</option>
+                                <option value="Junior Suite - 1 King Bed and Sitting Area">Junior Suite - 1 King Bed and Sitting Area</option>
+                                <option value="Executive Suite - 1 King Bed, Sitting Area, and Kitchenette">Executive Suite - 1 King Bed, Sitting Area, and Kitchenette</option>
+                                <option value="Presidential Suite - 1 King Bed, Living Room, and Full Kitchen">Presidential Suite - 1 King Bed, Living Room, and Full Kitchen</option>
+                            </select>
+
+                        <label>How Many Rooms Needed</label>
+                        <input type="number" name="roomnumber" form="reservation-form" placeholder="Enter Number of Rooms" required>
+            
+                        <label>Special Accommodations / Comments</label>
+                        <textarea name="comment" rows="5" cols="50" form="reservation-form"></textarea>
+        
+                        <button type="submit" class="button">Submit</button>
+
+                    </div>
+                
+                </form>
+
+            </main>
+
+        <footer>
+
+            <section class="footer-info">
+
+                <p class="business-name">The Temple Inn & Suites</p>
+                <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+                <p>&copy; 2019 The Temple Inn & Suites  |  Chris Van Ry  |  Provo, UT</p>
+                <p><span id="currentDate"></span> | <a href="resources.html">Resources</a> |<a href="http://byui.edu">BYU Idaho</a></p>
+
+            </section>
+            
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+
+</html>
