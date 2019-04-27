@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Volume of a Tetrahedron</title>
+<script>
+/* Defining Table
+ * Input: Tetrahedron edge length
+ * Processing: Compute volume of tetrahedron
+ * Output: Volume of tetrahedron
+ */
+function computeVolume() {
+    // Get width and length of a parcel in feet
+    var length = parseFloat(document.getElementById('length').value);
+
+    // Calculate volume
+    var volume = Math.pow(length, 3) / (6 * Math.sqrt(2));
+
+    // Display volume to user
+    document.getElementById('volume').innerHTML = volume;
+}
+</script>
+</head>
+
+<body>
+    <h1>Volume of a Tetrahedron</h1>
+    Side Length <input type="text" id="length"><br>
+    <button type="button" onclick="computeVolume()">Volume</button><br>
+    Volume <div id="volume"></div>
+</body>
+</html>

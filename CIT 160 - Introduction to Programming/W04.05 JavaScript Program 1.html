@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>W04.05 JavaScript Program 1</title>
+<script>
+/* Defining Table
+ * Input: User's declared major
+ * Processing: Create a statement for that person
+ * Output: The statement
+ */
+function userMajor() {
+    // This line prompts the user to input their declared major
+    var major = prompt("What is your declared major?");
+
+    // Create a personalized statement for the user.
+    var statement = "You are majoring in " + major + " and it won't be easy, but it will definitely be worth it. You can do this!";
+
+    // The next line causes the computer to display
+    // a statement to the user in a popup window.
+    alert(statement);
+}
+</script>
+</head>
+
+<body>                                      
+    <button type="button" onclick="userMajor()">Click Me</button>
+</body>
+</html>

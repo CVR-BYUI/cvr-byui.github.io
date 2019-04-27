@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>W07.05 Boolean Logic Program 2</title>
+
+<script>
+/* Input: System clock
+ * Processing: Determine on whether user can sleep in or not relative to the day of the week and holidays
+ * Output: Display message to user
+ */
+function sleepInOrNot() {
+    // Get the computer date
+    var now = new Date();
+    var month = now.getMonth();
+    var dayOfMonth = now.getDate();
+    var dayOfWeek = now.getDay();
+
+    // Determine which message to display
+    var message;
+
+    if (dayOfWeek == 0 || dayOfWeek == 6 || dayOfMonth == 1 && month == 0 || dayOfMonth == 4 && month == 6 || dayOfMonth == 25 && month == 11) {
+        message = "Sleep in.";
+    }
+    else {
+        message = "Get up!";
+    }
+
+    // Display message to the user
+    document.getElementById('outputDiv').innerHTML = message;
+}
+</script>
+</head>
+
+<body>                      
+Are you allowed to sleep in today?
+</br></br>
+<button type="button" onclick="sleepInOrNot()">?</button>
+</br></br>
+<div id="outputDiv"></div>              
+</body>         
+</html>
