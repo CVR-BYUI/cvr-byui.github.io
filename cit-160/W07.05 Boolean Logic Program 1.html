@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>W07.05 Boolean Logic Program 1</title>
+
+<script>
+/* Input: Customer's subtotal
+ * Processing: Subtract 10% if subtotal is greater than 50 and if it is Tuesday or * Wednesday. Add sales tax. 
+ * Output: Total including applicable discount and sales tax
+ */
+function totalPrice() {
+    // Get the user input from a text field and convert to number 
+    var subtotal = parseFloat(document.getElementById("subtotalInputBox").value);
+
+    // Determine if discount applies
+    var dayOfWeek = new Date().getDay();
+
+    if (subtotal > 50) {
+        if (dayOfWeek == 2 || dayOfWeek == 3) {
+            subtotal *= .9;
+        }
+    }
+
+    // Add sales tax and keep only 2 places after decimal
+    var total = subtotal * 1.06;
+    var totalPrice = total.toFixed(2);
+
+    // Display the total price to the user
+    document.getElementById('outputDiv').innerHTML = totalPrice;
+}
+</script>
+</head>
+
+<body>                      
+Please enter the customer's subtotal: <input type="text" id="subtotalInputBox">
+</br></br>
+<button type="button" onclick="totalPrice()">Calculate Total Price</button>
+</br></br>
+<div id="outputDiv"></div>              
+</body>         
+</html>

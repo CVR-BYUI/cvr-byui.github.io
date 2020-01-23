@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>W05.07 Compute Mileage</title>
+<script>
+/* Defining Table
+ * Input: Beginning and ending odometer readings of a vehicle and number of 
+ * gallons of gasoline used
+ * Processing: Calculate miles per gallons of gas used
+ * Output: Miles per gallon
+ */
+function computeMilesPerGallon() {
+    // Get beginning and ending odometer readings and gallons of gas used
+    var begin = parseFloat(document.getElementById('beginInputBox').value);
+    var end = parseFloat(document.getElementById('endInputBox').value);
+    var gas = parseFloat(document.getElementById('gasInputBox').value);
+
+    // Calculate mpg
+    var mpg = (end - begin) / gas;
+
+    // Display mpg to user
+    document.getElementById('mpgDiv').innerHTML = mpg + " MPG";
+}
+</script>
+</head>
+
+<body>                             
+Please enter beginning odometer reading: <input type="text" id="beginInputBox">
+<br>
+Please enter ending odometer reading: <input type="text" id="endInputBox">
+<br>
+Please enter gallons of gas used: <input type="text" id="gasInputBox">
+<br>
+<button type="button" onclick="computeMilesPerGallon()">Compute Mileage</button>
+<div id="mpgDiv"></div>
+</body>       
+</html>

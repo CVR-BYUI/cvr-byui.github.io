@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>W13.04 Two More Functions that use Arrays</title>
+<script>
+/* Input: Nothing
+ * Processing: The functions will count the number of evens in an array and multiply each value by a multiplier
+ * Output: Number of evens and array value products
+ */
+function displayValues() {
+
+    var list = [17, 8, 9, 5, 20]
+    var multiplier = 3;
+
+    var evens = countEvens(list);
+    var products = multiply(list, multiplier);
+
+    document.getElementById('evensOutputDiv').innerHTML = evens;
+    document.getElementById('productsOutputDiv').innerHTML = products;
+
+}
+
+function countEvens(list) {
+
+    var count = 0;
+
+    for (var i = 0; i < list.length; i++) {
+        if (list[i] % 2 == 0) {
+            count++;
+        } 
+    }
+
+    return count;
+}
+
+function multiply(list, multiplier) {
+
+    for (var i = 0; i < list.length; i++) {
+        list[i] *= multiplier
+    }
+
+    return list;
+}
+
+</script>
+</head>
+
+<body>
+    <h1>Arrays</h1>
+    <p><button type="button" onclick="displayValues()">Calculate</button></p>
+    <p>Number of even integers in array: <div id="evensOutputDiv"></div></p>
+    <p>Array values multiplied by 3: <div id="productsOutputDiv"></div></p>
+</body>         
+</html>

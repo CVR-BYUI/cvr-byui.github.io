@@ -1,0 +1,298 @@
+/* small/mobile view */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	min-width: 315px;
+}
+
+body {
+	font-family: 'Rajdhani', sans-serif;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+#site-logo {
+    width: 120px;
+	float: left;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#my-account-button-container {
+	float: right;
+	padding-top: 10px;
+	padding-right: 15px;
+}
+
+#my-account-button {
+	text-decoration: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    display: inline-block;
+    color: #3a3a3a;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#my-account-button img {
+	width: 30px;
+	padding-right: 10px;
+}
+
+#my-account-button:visited {
+	color: #3a3a3a;
+}
+
+#my-account-button:hover {
+	background-color: #4c96d7;
+    color: #3a3a3a;
+}
+
+.nav-container {
+	padding-top: 65px;
+}
+
+.site-nav-menu {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #3a3a3a;
+}
+
+.site-nav-menu li {
+	float: left;
+}
+
+.site-nav-menu li a {
+	display: block;
+  	color: white;
+  	margin-left: 8px;
+  	font-size: 85%;
+  	text-align: center;
+  	padding-top: 10px;
+  	padding-right: 5px;
+  	padding-bottom: 10px;
+  	padding-left: 5px;
+ 	text-decoration: none;
+}
+
+.site-nav-menu li a:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    font-weight: bold;
+}
+
+h1 {
+    color: #3a3a3a;
+	font-size: 20px;
+	margin: 0px;
+	padding: 15px 10px;
+}
+
+#hero-image-container {
+    position: relative;
+}
+
+#hero-image {
+	display: block;
+	margin: auto;
+	width: 90%;
+	padding-bottom: 10px;
+}
+
+#feature-box h4 {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#feature-box p {
+    margin-top: 0;
+}
+
+#feature-box {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 95%;
+    color: #4c96d7;
+}
+
+#own-today-button {
+    display: block;
+    margin: auto;
+    width: 150px;
+    padding-top: 15px;
+}
+
+#upgrades-reviews-container {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#upgrades-reviews-container h2 {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+#reviews-container ul {
+    margin-top: 0;
+}
+
+#reviews-container li {
+    padding-bottom: 10px;
+}
+
+#upgrades-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.upgrades-box {
+    position: relative;
+    text-align: center;
+}
+
+.upgrades-box img {
+    background-color: #4c96d7;
+    border: 1px solid #3a3a3a;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    width: 30%;
+
+}
+
+.upgrades-box p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -20px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.footer-line {
+	background: #3a3a3a;
+	height: 5px;
+	margin: 0px 10px;
+}
+
+.footer-text {
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+}
+
+/* medium/tablet view */
+
+@media only screen and (min-width:800px) {
+
+    .background-image {
+        background: url(http://localhost/phpmotors/images/site/small_check.jpg);
+
+        background-repeat: repeat-y;
+
+    }
+
+    .body-container {
+        position: relative;
+        top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid #4c96d7;
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 85%;
+    }
+
+	#site-logo {
+        width: 225px;
+	}
+
+	#my-account-button-container {
+		padding-top: 25px;
+	}
+
+	#my-account-button {
+		font-size: 125%;
+	}
+
+	.nav-container {
+		padding-top: 115px;
+	}
+
+	.site-nav-menu li a {
+		font-size: 23px;
+		padding: 16px;
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    #feature-box {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    #own-today-button {
+        position: absolute;
+        top: 65px;
+        left: 16px;
+    }
+
+	.footer-text {
+		font-size: 16px;
+	}
+
+}
+
+/* large/desktop view */
+
+@media only screen and (min-width:1000px) {
+
+	#site-logo {
+		width: 225px;
+	}
+
+	.nav-container {
+		padding-top: 115px;
+    }
+    
+    .body-container {
+        max-width: 1500px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    #feature-box {
+        font-size: 20px;
+        padding-top: 15px;
+        padding-left: 50px;
+    }
+
+    #own-today-button {
+        position: absolute;
+        top: 90px;
+        left: 50px;
+    }
+
+}

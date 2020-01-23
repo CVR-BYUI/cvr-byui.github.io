@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>W06.09 If Statement Program 2</title>
+
+<script>
+/* Input: Two numbers, basic arithmetic operator, and answer
+ * Processing: Compute correct answer and compare to input
+ * Output: Message verifying accuracy of answer
+ */
+function testMath() {
+    // Get the user input from text fields
+    var num1Input = document.getElementById("num1");
+    var num1 = parseFloat(num1Input.value);
+            
+    var num2Input = document.getElementById("num2");
+    var num2 = parseFloat(num2Input.value);
+            
+    var operatorInput = document.getElementById("operator");
+    var operator = operatorInput.value;
+            
+    var userAnswerInput = document.getElementById("userAnswer");
+    var userAnswer = parseFloat(userAnswerInput.value);
+
+    // Compute correct answer
+    var correctAnswer;
+    if (operator == "+") {
+        correctAnswer = num1 + num2;
+    }
+    else if (operator == "-") {
+        correctAnswer = num1 - num2;
+    }
+    else if (operator == "*") {
+        correctAnswer = num1 * num2;
+    }
+    else if (operator == "/") {
+        correctAnswer = num1 / num2;
+    }
+
+    // Compare user input answer with correct answer
+    var message;
+    if (userAnswer == correctAnswer) {
+        message = "Correct! Good job.";
+    }
+    else {
+        message = "Incorrect. Try again!";
+    }
+
+    // Display the message to the user
+    document.getElementById('outputDiv').innerHTML = message;
+}
+</script>
+</head>
+
+<body>                      
+<h1>Test Your Math Skills!</h1>
+Please input a number, arithmetic operator, another number, and your answer:
+<br><br>
+<input type="text" id="num1">
+<input type="text" id="operator">
+<input type="text" id="num2">
+=
+<input type="text" id="userAnswer">
+<br><br>
+<button type="button" onclick="testMath()">Check</button>
+<br><br>
+<div id="outputDiv"></div>              
+</body>         
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>W08.06 Repetition Program 1</title>
+
+<script>
+/* Input: Prompt user to enter a number.
+ * Processing: Calculate the sum of all odd numbers between 1 and user input number.
+ * Output: Display result to user.
+ */
+function computeOddSum() {
+
+    // Convert input text into integer
+    var number = parseInt(document.getElementById("numberInputBox").value);
+
+    // Calculate sum of odd numbers between 1 and user input
+    var sum = 0;
+    for (var i = 1; i <= number; i++) {
+        if (i % 2 != 0) {
+            sum += i;
+        }
+    }
+
+    // Display result to user
+    document.getElementById('outputDiv').innerHTML = sum; 
+
+}
+</script>
+</head>
+
+<body>                      
+Please enter a number: <input type="text" id="numberInputBox">
+</br></br>
+<button type="button" onclick="computeOddSum()">Calculate Sum of Odds</button>
+</br></br>
+<div id="outputDiv"></div>              
+</body>         
+</html>
